@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip n' Go</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Zip n' Go</h1>
+    <p>"Destinations call. We answer with the perfect pack!"</p>
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <div class="vertical"></div>
+        <li><a href="#">About</a></li>
+        <div class="vertical"></div>
+        <li><a href="#">Account</a></li>
+        <div class="vertical"></div>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav> -->
+  <!-- <div class="vertical"></div> -->
+  </header>
+  <!-- Main Content -->
+  <main>
+    <form action="#" name="destination_form">
+    <section class="beforeSearch">
+      <div class="form-container">
+          <div class="option">
+            <!--Dropdown for selecting destination-->
+            <select name="option_1" id="destination">
+              <option value="X" disabled selected>Destination</option>
+              <option value="india">India</option>
+              <option value="paris">Paris</option>
+              <option value="sk">South Korea</option>
+            </select>
+          </div>
+           <!-- Vertical divider -->
+          <div class="vertical"></div>
+          <div class="option">
+            <!-- Dropdown for selecting duration -->
+            <select name="option_2" id="duration">
+              <option value="X" disabled selected>Duration</option>
+              <option value="3">3 Days</option>
+              <option value="7">7 Days</option>
+            </select>
+        </div>
+        <div class="vertical"></div>
+          <div class="option">
+            <select name="option_3" id="purpose">
+              <!-- Dropdown for selecting purpose -->
+              <option value="X" disabled selected>Purpose</option>
+              <option value="bus">Business</option>
+              <option value="per">Personal</option>
+            </select>
+        </div>
+        <!--Button to generate the packing list-->
+        <div class="option-btn">
+          <button id="generate-list">Generate List</button>
+        </div>
+      </div>
+      
+    </section>
+    <div id="error"> Please Select a Destination and a Duration </div>
+  </form>
+<!--Section displayed after generating the packing list-->
+    <section id="afterSearch">
+      <div class="info-card">
+        <div>Destination : <span id="sel_dest"></span> </div>
+        <div>Duration : <span id="sel_dur"></span></div>
+        <div>Purpose : <span id="sel_purp"></span></div>
+      </div>
+  
+      <div class="categories">
+        <div class="category">
+          <div class="category-title" onclick="accordian('category_1')">
+            <div id="cat_1">Clothing</div>
+            <div class="arrow down"></div>
+          </div>
+          <ul id="category_1" class="accordian_sec">
+          </ul>
+        </div>
+  
+        <div class="category">
+          <div class="category-title" onclick="accordian('category_2')">
+            <div id="cat_2">Documents</div>
+            <div class="arrow down"></div>
+            </div>
+          <ul id="category_2" class="accordian_sec">
+          </ul>
+        </div>
+  
+        <div class="category">
+          <div class="category-title" onclick="accordian('category_3')">
+            <div id="cat_3">Electronics</div>
+            <div class="arrow down"></div>
+            </div>
+          <ul id="category_3" class="accordian_sec">
+          </ul>
+        </div>
+  
+        <div class="category">
+            <div class="category-title" onclick="accordian('category_4')">
+              <div id="cat_4">Accessories</div>
+              <div class="arrow down"></div>
+            </div>
+          <ul id="category_4" class="accordian_sec">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Footer Section-->
+  <footer>
+   <!-- Copyright Information -->  
+    <div class="copyright">
+      <img src="./images/copyright.png" alt="copyright">
+      <div src="copyright-text">  
+        Isha, 2024
+      </div>
+    </div>
+    <!--Social Media Links-->
+    <div class="social-icons">
+      <a href="#"><img src="./images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="./images/youtube.png" alt="Youtube"></a>
+    </div>
+  </footer>
+</body>
+</html>

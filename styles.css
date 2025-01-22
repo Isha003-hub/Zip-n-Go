@@ -1,0 +1,219 @@
+/* Importing Google Fonts for styling */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Babylonica&family=Carrois+Gothic&family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Babylonica&family=Carrois+Gothic&family=Cedarville+Cursive&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hammersmith+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("./images/travel\ packer-FF.jpeg");
+    background-size : cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+  }  
+
+  /* Header */
+  header {
+    padding: 20px 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+    font-family: "Abhaya Libre";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.84px;
+    padding-top: 30px;
+  }
+  
+  header p {
+    color: rgba(61, 54, 54, 0.65);
+    text-align: center;
+    font-family: "Hammersmith One";
+  }
+  
+/* Form Container */
+/* Vertical divider between form elements */
+.vertical {
+  border-left: 2px solid darkgrey;
+  height: 35px;
+} 
+section{
+  display: flex;
+  justify-content: center;
+}
+/* Hide this section initially */
+#afterSearch{
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+
+}
+/* Styling for form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  background: #FFF;
+  font-family: "Hammersmith One";
+  /* box-shadow: 4px 4px 12.5px 0px rgba(121, 181, 190, 0.73) inset; */
+  filter: drop-shadow(4px 4px 8px rgba(194, 224, 232, 0.00)) drop-shadow(8px 8px 12px rgba(121, 181, 190, 0.61)) drop-shadow(-4px -4px 8px rgba(255, 255, 255, 0.00)) drop-shadow(-8px -8px 12px rgba(255, 255, 255, 0.00));  
+}
+
+div.option{
+  font-family: "Hammersmith One";
+  border: none;
+}
+
+div.option-btn{
+  padding: 10px;
+  font-family: "Hammersmith One";
+}
+/* Styling for select dropdowns and buttons */
+select, button {
+  font-size: 1em;
+  font-family: "Hammersmith One";
+  background-color: transparent;
+  padding: 10px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+  background: #51A0D4;
+  font-family: "Hammersmith One";
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Hammersmith One";
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(300, 300, 300, 0.7);
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright img{
+  width: 20px;
+  padding: 0px 10px;
+}
+
+.copyright-text{
+  font-size: large;
+}
+
+div.social-icons img {
+  width: 30px;
+  margin: 0 5px;
+  padding: 10px;
+}
+/* Card with user-selected trip details */
+.info-card {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 20px 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  align-items: center;
+  gap: 35px;
+  border-radius: 20px;
+}
+
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+/* Categories container */
+.category {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hidden accordion sections for categories */
+.category .accordian_sec {
+  list-style: none;
+  padding-left: 1rem;
+  display: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+/* Error message styling */
+#error{
+  color: red;
+  font-size: 24px;
+  padding-top: 20px;
+  display: none;
+}
+
+.category .accordian_sec li {
+  margin: 0.5rem 0;
+}
